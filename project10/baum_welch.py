@@ -136,10 +136,10 @@ class BaumWelch(ForwardBackward):
             print(new_ll - old_ll)
             if abs(new_ll - old_ll) < threshold:
                 print("Convergence reached! Your model has been trained")
-                return self.log_transition, self.log_emission, self.initial_probs
+                return self.log_transition, self.log_emission, self.log_initial
 
         print("Convergence criteria not met")
-        return self.log_transition, self.log_emission, self.initial_probs
+        return self.log_transition, self.log_emission, self.log_initial
 
 
 def model_randomizer(states, emissions, seed=7):
