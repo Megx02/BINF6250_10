@@ -7,8 +7,12 @@ class HMM:
     Handles initialization and log-space conversion for Numerical Stability.
     """
 
-    def __init__(self, states, initial_probs, transition_probs, emission_probs):
+    def __init__(self, states, emissions, initial_probs, transition_probs, emission_probs):
         self.states = states
+        self.emissions = emissions
+        self.initial_probs = initial_probs
+        self.transition_probs = transition_probs
+        self.emission_probs = emission_probs
         # Convert all probabilities to log-scale 
         self.log_initial = {s: self.convert_to_log_scale(initial_probs[s]) for s in states}
 
