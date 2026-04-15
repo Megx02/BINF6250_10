@@ -75,7 +75,7 @@ Description of the stumbling blocks the team experienced
 Group leader's reflection on the project
 
 ## Other member
-Other members' reflections on the project
+Meghana Ravi - This project was more challenging for me to understand compared to the previous HMM projects, especially in terms of the underlying logic and understanding the mathematical equations. Aside from the mathematical aspect of this algorithm, what the iterations were supposed to do also confused me a lot. Discussing the process with my group and attending office hours helped clarify many of my confusions. Going through the extra material in the module also helped me visualize the process better. Once I understood the logic, it became easier to work on. 
 
 # Generative AI Appendix
 As per the syllabus
