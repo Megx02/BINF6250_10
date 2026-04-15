@@ -65,17 +65,17 @@ Maximization:
 ```
 
 # Successes
-Description of the team's learning points
+Once we broke the algorithm into the expectation and maximization steps our group was able to think through this algorithm in a more productive manner. At first we were almost combining both steps into one, leading to a lot of confusion. Once we got past this, we were able to work through the logic and find a strategy for implementation. Keeping these parts seperate made the debugging and sanity checks much easier when we started writing code. Additionally within the expectation step we were able to break down the equations provided in the lecture for generating soft counts - once we internalized these and figured out how to use our forward-backward algorithm implementation to get the probabilities needed for them, the whole project to started to flow better.
 
 # Struggles
-Description of the stumbling blocks the team experienced
+As mentioned, breaking the algorithm into it's two main parts helped us implement the algorithm, but it was a bit of a struggle to get there. At first there was confusion around what an iteration looked like, and we originally thought each iteration was a move through the set of sequences. So analysis of seq1 = iteration 1, seq2 = iteration 2, so on and so forth. Within this framework we though about expectation and maximization happening as one (calculate new model after analyzing a sequence, compare it to the model before that sequence), which as expected, was not making sense from a counts -> normalization perspective. After meeting with Marcus and coming to the realization that you analyze all sequences in one iteration that was when we were able to discern between the two steps. In addition to this we had some difficulty figuring out the method to compare our current model with the previous one - we initially thought of it as comparing the actual probabilities of the model with one another rather than comparing the log-likelihood of the two models. Where our implementation uses dictionaries to represent our models, this was quite a pain to try and implement, and also not as good of a metric as log-likelihood.  
 
 # Personal Reflections
 ## Group Leader
 Group leader's reflection on the project
 
 ## Other member
-Other members' reflections on the project
+Connor Crawford - This project, probably more than any other project, taught me how important it is to consider how you iterate through your data and what you're trying to accomplish when you do. In this project we needed multiple layers of iteration: The outer iteration to perform maximization and the inner iteration to calculate expected counts across each sequence in our observations - not to mention the iterations within that to access states and next_states. These all needed to be lined up in a proper manner to keep the system functioning in a way that at least appears to behave in a reasonable manner. If you lose track of what you're doing at each level it's very easy to get lost.
 
 # Generative AI Appendix
-As per the syllabus
+ChatGPT was used to breakdown equations and the conceptual framework of the algorithm.
