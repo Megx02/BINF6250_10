@@ -75,6 +75,7 @@ As mentioned, breaking the algorithm into it's two main parts helped us implemen
 Group leader's reflection on the project
 
 ## Other member
+Meghana Ravi - This project was more challenging for me to understand compared to the previous HMM projects, especially in terms of the underlying logic and understanding the mathematical equations. Aside from the mathematical aspect of this algorithm, what the iterations were supposed to do also confused me a lot. Discussing the process with my group and attending office hours helped clarify many of my confusions. Going through the extra material in the module also helped me visualize the process better. Once I understood the logic, it became easier to work on. 
 Connor Crawford - This project, probably more than any other project, taught me how important it is to consider how you iterate through your data and what you're trying to accomplish when you do. In this project we needed multiple layers of iteration: The outer iteration to perform maximization and the inner iteration to calculate expected counts across each sequence in our observations - not to mention the iterations within that to access states and next_states. These all needed to be lined up in a proper manner to keep the system functioning in a way that at least appears to behave in a reasonable manner. If you lose track of what you're doing at each level it's very easy to get lost.
 
 # Generative AI Appendix
